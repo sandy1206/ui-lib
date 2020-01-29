@@ -15,5 +15,5 @@ export default function inputList(inputList) {
       <App input={inputList} />
     );
 
-  return ReactDOM.render(inputCheck, document.getElementById("root"));
+  // return ReactDOM.render(inputCheck, document.getElementById("root"));
 }
