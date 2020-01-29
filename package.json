@@ -1,12 +1,9 @@
 {
-  "name": "ui-library",
+  "name": "@sandy1206/ui-lib",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
+  "dependencies": {},
   "babel": {
     "presets": [
       "@babel/preset-env",
@@ -15,10 +12,15 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack",
-    "test": "jest"
+    "build": "webpack"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",

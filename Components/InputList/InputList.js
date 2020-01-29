@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import Input from "./Input";
+import Input from "./Input";
 
 class InputList extends Component {
   constructor(props) {
@@ -51,21 +51,20 @@ class InputList extends Component {
 
   render() {
     return (
-      // <div className="row">
-      //   {this.state.items.map((item, index) => {
-      //     return (
-      //       <Input
-      //         index={index}
-      //         item={item.name}
-      //         active={item.active}
-      //         inputType={this.props.inputType}
-      //         key={index}
-      //         handleChange={this.handleChange}
-      //       />
-      //     );
-      //   })}
-      // </div>
-      "SDfgdsf"
+      <div className="row">
+        {this.state.items.map((item, index) => {
+          return (
+            <Input
+              index={index}
+              item={item.name}
+              active={item.active}
+              inputType={this.props.inputType}
+              key={index}
+              handleChange={this.handleChange}
+            />
+          );
+        })}
+      </div>
     );
   }
 }
