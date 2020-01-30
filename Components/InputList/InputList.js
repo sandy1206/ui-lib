@@ -46,7 +46,14 @@ class InputList extends Component {
       newItem,
       ...items.slice(index + 1, items.length)
     ];
-    this.setState({ items: newItems }, () => console.table(this.state.items));
+    this.setState({ items: newItems });
+
+    /**
+     *Activating the store function here
+     */
+    console.log(this.props);
+    console.log("hello world");
+    this.props.activate();
   }
 
   render() {
